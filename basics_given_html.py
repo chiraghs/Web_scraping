@@ -45,6 +45,11 @@ print(soup.find(class_='video'))
 #print(soup.select('#id'))
 print(soup.select('.enter'))#in a list
 
+
+#attributes
+ela=soup.find(class_='img')['src']
+print(ela)
+
 #gettext() or text
 for item in soup.select('header'):
       print(item.get_text())
@@ -58,3 +63,4 @@ el3=soup.body.contents[1].find_next_sibling() # find_previous_sibling() , find_p
 
 print(el2)
 print(el3)
+print(ela)
